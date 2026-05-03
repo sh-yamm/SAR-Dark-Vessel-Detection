@@ -1,0 +1,515 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.787351095999945,
+          43.62184443749979
+        ]
+      },
+      "properties": {
+        "score": 0.4105,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.278483598917033,
+          43.55303561062421
+        ]
+      },
+      "properties": {
+        "score": 0.4025,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.889707887893631,
+          43.67331270210646
+        ]
+      },
+      "properties": {
+        "score": 0.3838,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.677648188811425,
+          43.57655605412725
+        ]
+      },
+      "properties": {
+        "score": 0.3827,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.6897731031127305,
+          43.57886197996089
+        ]
+      },
+      "properties": {
+        "score": 0.3801,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1638755915314025,
+          43.49179022048294
+        ]
+      },
+      "properties": {
+        "score": 0.3779,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7538078067665,
+          43.61308191933199
+        ]
+      },
+      "properties": {
+        "score": 0.3733,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7300103554500215,
+          43.67561862794009
+        ]
+      },
+      "properties": {
+        "score": 0.3646,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.077232974753324,
+          43.358415470265655
+        ]
+      },
+      "properties": {
+        "score": 0.3619,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1125973081321314,
+          43.35804652213228
+        ]
+      },
+      "properties": {
+        "score": 0.3414,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.429666124111435,
+          43.5766482911606
+        ]
+      },
+      "properties": {
+        "score": 0.34,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.023460848779907,
+          43.62359694113335
+        ]
+      },
+      "properties": {
+        "score": 0.3364,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.747945124520703,
+          43.588454631428796
+        ]
+      },
+      "properties": {
+        "score": 0.3344,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.436612689596558,
+          43.571298543226575
+        ]
+      },
+      "properties": {
+        "score": 0.3225,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.9574259723137155,
+          43.939785491440986
+        ]
+      },
+      "properties": {
+        "score": 0.3074,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.752239365002415,
+          43.58707107592862
+        ]
+      },
+      "properties": {
+        "score": 0.3041,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.9823601343459405,
+          43.66519584317207
+        ]
+      },
+      "properties": {
+        "score": 0.2904,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.425045807534228,
+          43.606071904797744
+        ]
+      },
+      "properties": {
+        "score": 0.283,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.704929245989362,
+          43.575818157860496
+        ]
+      },
+      "properties": {
+        "score": 0.2828,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.809580105552339,
+          43.60404269006415
+        ]
+      },
+      "properties": {
+        "score": 0.2809,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.540485095777907,
+          43.6059796677644
+        ]
+      },
+      "properties": {
+        "score": 0.2683,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.779646723370991,
+          43.60441163819753
+        ]
+      },
+      "properties": {
+        "score": 0.2501,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.6126030756325465,
+          43.58993042396232
+        ]
+      },
+      "properties": {
+        "score": 0.2421,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.780278229324184,
+          43.62018417089958
+        ]
+      },
+      "properties": {
+        "score": 0.2401,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.813748044843412,
+          43.60155229016383
+        ]
+      },
+      "properties": {
+        "score": 0.2328,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.123080306955135,
+          43.34808492253099
+        ]
+      },
+      "properties": {
+        "score": 0.2323,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1450567141262513,
+          43.343473070863716
+        ]
+      },
+      "properties": {
+        "score": 0.2115,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0928943223925103,
+          43.601829001263866
+        ]
+      },
+      "properties": {
+        "score": 0.2096,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.907895259345589,
+          43.66676387273895
+        ]
+      },
+      "properties": {
+        "score": 0.2016,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.582922295832476,
+          43.591221742429155
+        ]
+      },
+      "properties": {
+        "score": 0.201,
+        "is_dark": false,
+        "matched_mmsi": null,
+        "distance_m": null,
+        "source": "yolo"
+      }
+    }
+  ]
+}

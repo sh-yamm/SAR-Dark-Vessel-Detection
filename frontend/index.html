@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAR Dark Vessel Detection</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Leaflet Draw (rectangle AOI) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css" />
+  <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Sidebar ─────────────────────────────────────────────── -->
+  <div id="sidebar">
+    <h1>SAR Dark Vessel Detection</h1>
+    <p class="subtitle">Sentinel-1 · xView3 · YOLOv8 (2-ch)</p>
+
+    <div class="section">
+      <h2>How to use</h2>
+      <ol>
+        <li>Draw a rectangle on the map using the toolbar (top-left).</li>
+        <li>Choose model and options below.</li>
+        <li>Click <strong>Run Inference</strong>.</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2>Model</h2>
+      <label class="radio-label">
+        <input type="radio" name="model" value="yolo" checked />
+        YOLOv8 (deep learning, 2-channel SAR)
+      </label>
+      <label class="radio-label">
+        <input type="radio" name="model" value="svm" />
+        SVM (classical ML, handcrafted features)
+      </label>
+      <label class="radio-label">
+        <input type="radio" name="model" value="cfar" />
+        CA-CFAR (signal processing baseline)
+      </label>
+      <label class="radio-label">
+        <input type="radio" name="model" value="otsu" />
+        Otsu thresholding (global baseline)
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="include-cfar" />
+        Overlay CFAR detections for comparison
+      </label>
+    </div>
+
+    <button id="btn-detect" disabled>Draw an AOI first</button>
+    <button id="btn-clear">Clear</button>
+
+    <!-- Stats panel -->
+    <div id="stats" class="section hidden">
+      <h2>Results</h2>
+      <table id="stats-table">
+        <tr><td>Total vessels</td><td id="stat-total">—</td></tr>
+        <tr><td class="dark-row">Dark vessels</td><td id="stat-dark" class="dark-row">—</td></tr>
+        <tr><td class="matched-row">AIS matched</td><td id="stat-matched" class="matched-row">—</td></tr>
+        <tr><td>Scene ID</td><td id="stat-scene">—</td></tr>
+        <tr><td>Model</td><td id="stat-model">—</td></tr>
+      </table>
+    </div>
+
+    <!-- Legend -->
+    <div class="section" id="legend">
+      <h2>Legend</h2>
+      <div class="legend-item">
+        <span class="dot dark"></span> Dark vessel (no AIS)
+      </div>
+      <div class="legend-item">
+        <span class="dot matched"></span> AIS-matched vessel
+      </div>
+      <div class="legend-item">
+        <span class="dot cfar"></span> CFAR detection
+      </div>
+      <div class="legend-item">
+        <span class="dot otsu"></span> Otsu detection
+      </div>
+      <div class="legend-item">
+        <span class="dot svm"></span> SVM detection
+      </div>
+    </div>
+
+    <div id="error-msg" class="hidden"></div>
+    <div id="loading" class="hidden">Running inference …</div>
+  </div>
+
+  <!-- ── Map ──────────────────────────────────────────────────── -->
+  <div id="map"></div>
+
+  <script src="map.js"></script>
+</body>
+</html>

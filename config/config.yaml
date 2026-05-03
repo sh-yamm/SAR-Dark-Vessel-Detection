@@ -1,0 +1,52 @@
+data:
+  root: "data/xview3"
+  scenes_dir: "data/xview3/scenes"   # each sub-folder = one scene (VV_dB.tif, VH_dB.tif)
+  labels_train: "data/train.csv"
+  labels_val: "data/validation.csv"
+  chips_dir: "data/chips"
+  chip_size: 512
+  overlap: 64
+  # number of background (no-ship) chips per positive chip
+  negative_ratio: 2
+  # estimated bounding box size in pixels when vessel_length_m is missing
+  default_box_px: 15
+
+model:
+  pretrained: "yolov8n.pt"
+  in_channels: 2          # VV + VH  (NOT 3-channel RGB)
+  num_classes: 1           # single class: vessel
+  img_size: 512
+
+training:
+  epochs: 100
+  batch_size: 16
+  # differential learning rates: backbone learns slower to preserve pretrained features
+  lr_backbone: 1.0e-5
+  lr_neck: 1.0e-4
+  lr_head: 1.0e-3
+  weight_decay: 1.0e-4
+  patience: 15             # early stopping
+  save_dir: "checkpoints"
+  val_interval: 2          # validate every N epochs
+
+cfar:
+  guard_size: 2            # pixels to ignore around cell under test
+  train_size: 8            # pixels used to estimate background
+  false_alarm_rate: 1.0e-4 # controls detection threshold k
+
+inference:
+  confidence_threshold: 0.20
+  nms_iou_threshold: 0.50
+  # AIS matching: detection must fall within this radius of an AIS ping
+  ais_match_radius_m: 500
+  # AIS matching: search within this time window (minutes) of scene acquisition
+  ais_time_window_min: 20
+
+evaluation:
+  # distance threshold (metres) to count a detection as TP
+  match_radius_m: 500
+
+backend:
+  host: "0.0.0.0"
+  port: 8000
+  precomputed_dir: "backend/precomputed"

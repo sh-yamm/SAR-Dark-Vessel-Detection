@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+
+# ML models
+*.pt
+*.pth
+*.h5
+checkpoints/
+
+# data
+data/
+
+# env
+.env
